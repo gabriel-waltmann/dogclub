@@ -25,7 +25,6 @@
 + Email
 + Participar
 + Slide show
-+ Welcome page
 
 <br>
 
@@ -33,11 +32,13 @@
 - [X] Email fild
 - [ ] Backend
 - [X] Loyalty
-- [X] Welcome email
-- [X] Animations
 
 <figure>
-  <img align="center" src="readme/readme2.gif"></img>
+  <img align="center" src="readme/1.png"></img>
+</figure>
+
+<figure>
+  <img align="center" src="readme/2.png"></img>
 </figure>
 
 <figure>
