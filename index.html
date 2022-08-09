@@ -1,85 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dogclub</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <h1>Dog</h1>
-            <h1>Club</h1>
+
+<body class="bg-light ">
+    <header class="navbar navbar-expand-md vw-100 px-5">
+        <div class="container-fluid">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarTogglerDemo01" >
+                <a class="navbar-brand" href="#">Dogclub</a>
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services & Rates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviewa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#"><button type="button" class="btn btn-outline-primary rounded-5">Login</button></a>
         </div>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Serviços</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
-        </nav>
-
-
     </header>
 
-    <main>
-        <section id="section1">
-            <div class="content">
-                <form 
-            
-                action="https://gmail.us14.list-manage.com/subscribe/post?u=1f95dbe61c14a18db89df628b&amp;id=919fdb98ce" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-               
-                <!--Necessary Content for the MAILCHIMP -->
-                    <h1>Inscreva-se agora</h1>
-                    <h1>no Dog Club</h1>
-                    <p>Inscreva-se na Dog club para sempre receber as novidades de nossos produtos e serviços para seu cãozinho.</p>
+
+    <main class="vw-100">
+        <section class="container-fluid row p-5 w-100" id="home">
+
+            <div class="col-6 pb-5">
+                <h1 class="display-5 text-primary">Sabemos que você ama </h1>
+                <h1 class="display-5 text-primary">muito seu pet</h1>
+                <p class="display-7 text-primary">Inscreva-se na Dog club para sempre receber as novidades de nossos
+                    produtos e serviços para seu cãozinho.</p>
+                <a href="#">
+                    <button type="button" class="btn btn-primary rounded-5">Agendar uma consulta</button>
+                </a>
+
+            </div>
+
+            <div class="col-12  text-center d-flex justify-content-between">
+                <div class="card">
+                    <div class="card-body shadow">
+                        <ion-icon name="trophy-outline"></ion-icon >
+                        <h2>85+</h2>
+                        <p>Prêmio</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body shadow">
+                        <ion-icon name="people-outline"></ion-icon >
+                        <h2>94k</h2>
+                        <p>Clientes</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body shadow">
+                        <ion-icon name="person-add-outline"></ion-icon >
+                        <h2>90+</h2>
+                        <p>Empregados</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body shadow">
+                        <ion-icon name="bag-check-outline"></ion-icon >
+                        <h2>88%</h2>
+                        <p>Proteção</p>
+                    </div>
+                </div>
+
+            </div>
+            <!--                 <form
+                    action="https://gmail.us14.list-manage.com/subscribe/post?u=1f95dbe61c14a18db89df628b&amp;id=919fdb98ce"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" novalidate>
+
+                    Necessary Content for the MAILCHIMP 
                     <input type="text" name="DOGNAME" id="nome" placeholder="Nome do seu Dog">
                     <input type="email" name="EMAIL" id="email" placeholder="E-mail">
 
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1f95dbe61c14a18db89df628b_919fdb98ce" tabindex="-1" value=""></div>
+                     real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                            name="b_1f95dbe61c14a18db89df628b_919fdb98ce" tabindex="-1" value=""></div>
 
                     <input type="submit" value="Participar" id="submit">
-                </form>
+                </form> -->
+
+        </section>
+
+        <section class="container-fluid p-5 d-flex align-items-center w-100 position-relative my-5" id="about">
+            <div class="col-6 d-flex justify-content-center">
+                <img src="images/dog2.png" alt="">
+                <div class="card shadow experienceCard border-0 position-absolute top-0 start-0 ms-5 rounded-3" >
+                    <div class="card-body d-flex row justify-content-center">
+                       <h2 class="mb-0 w-auto">20+</h2>
+                       <h3 class="mb-0">Anos de Experiência</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 pb-5 gap-5">
+                <h1 class="display-5 text-primary">O melhor para</h1>
+                <h1 class="display-5 text-primary">seu pet</h1>
+                <p class="display-7 text-primary">Conheça alguns dos beneficios dos nossos produtos e serviços para o seu pet.</p>
+                <div class="container p-0">
+                    <ul class="d-flex flex-wrap p-0">
+                        <li class="w-50 d-flex align-items-center"><ion-icon name="checkmark-circle-outline"></ion-icon>Vacinas</li>
+                        <li class="w-50 d-flex align-items-center"><ion-icon name="checkmark-circle-outline"></ion-icon>Odontologia</li>
+                        <li class="w-50 d-flex align-items-center"><ion-icon name="checkmark-circle-outline"></ion-icon>Internação</li>
+                        <li class="w-50 d-flex align-items-center"><ion-icon name="checkmark-circle-outline"></ion-icon>Farmácia</li>
+                    </ul>
+                </div>
+
             </div>
         </section>
 
-        <section id="section2">
+        <section class="container-fluid row m-0 p-0" id="servicesAndRates">
+            <div class="pet col-3  " >
 
-            <div class="slides">
-                <input type="radio" name="slides" id="opc1" checked>
-                <input type="radio" name="slides" id="opc2">
-                <div class="slide slide1">
-                    <picture id="slide1">
-                        <div class="h2 s1">
-                            <h2>"As únicas criaturas que são evoluídas o suficiente para carregar o amor puro, são cachorros e crianças" - Johnny Depp</h2>
-                        </div>
-                    </picture>
-                </div>
+                    <img src="images/dog1.png" alt="">
 
-                <div class="slide slide2">
-                    <picture id="slide2">
-                        <div class="h2 s2">
-                            <h2>"Meu objetivo é ser tão maravilhoso como meu cachorro pensa que eu sou" - Desconhecido</h2>
-                        </div>
-                    </picture>
-                </div>
-                <span>
-                    <label for="opc1" id="button1"></label>
-                    <label for="opc2" id="button2"></label>
-                </span>
+            </div>
+
+            <div class="col-6">
+                <h1>O melhor pacote de serviços!</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam minus optio eaque sint. Nihil et, laborum sint quaerat accusantium consequatur quia in, consequuntur aperiam, nulla fugit vitae harum nemo dicta.lo. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
 
             
+            <div class="pet col-3  " >
 
+                    <img src="images/cat1.png" alt="">
+
+            </div>
         </section>
 
     </main>
 
-    <footer>
+<!--     <footer>
         <a href="https://github.com/gabrielwaltmann/" target="_blank">Developed by Gabriel Waltmann</a>
-    </footer>
+    </footer> -->
 </body>
+<script src="scripts/bootstrap.bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </html>
