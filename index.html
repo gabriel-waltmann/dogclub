@@ -19,34 +19,179 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse" id="navbarTogglerDemo01" >
-                <a class="navbar-brand" href="#">Dogclub</a>
+            <div class="navbar-collapse collapse" id="navbarTogglerDemo01">
+                <div class="logo">
+                    <a class="navbar-brand" href="#">Dogclub</a>
+                    <img src="assets/images/logo.png" alt="">
+                </div>
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services & Rates</a>
+                        <a class="nav-link" href="#">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Reviewa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacts Us</a>
+                        <a class="nav-link" href="#">Contato</a>
                     </li>
                 </ul>
             </div>
 
-            <a href="#"><button type="button" class="btn btn-outline-primary rounded-5">Login</button></a>
+            <a href="#">
+                <button type="button" class="btn btn-outline-primary rounded-5">
+                    <ion-icon name="basket-outline"></ion-icon>
+                    Meus Pedidos
+                </button>
+            </a>
         </div>
     </header>
 
 
-    <main class="vw-100">
-        <section class="container-fluid row p-5 w-100" id="home">
+    <main class="vw-100  mx-3">
+
+        <section class="container row m-auto my-5" id="home">
+            <div id="carouselExampleInterval" class="carousel slide col-9 " data-bs-ride="carousel">
+                <div class="carousel-inner rounded-4">
+                    <div data-bs-interval="2000" class="carousel-item active">
+                        <img src="assets/images/posters/45-off.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item" data-bs-interval="2000">
+                        <img src="assets/images/posters/brinde.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img src="assets/images/posters/desconto.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="col-3">
+                <div class="card w-100 py-4 h-100">
+                    <div class="card-body d-flex  row align-content-center">
+                        <h5 class="card-title">Economize</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Na primeira compra</h6>
+                        <p class="card-text">20%OFF + FRETE GRÁTIS</p>
+                        <a href="#" class="card-link">
+                            <button type="button" class="btn btn-primary">Saiba mais</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="container my-5">
+            <h2 class="pb-2 ">Conheça nossos serviços</h2>
+            <div class="row h-100">
+                <div class="col d-flex w-16  ">
+                    <div class="card w-100 py-4 h-100 d-flex align-items-center">
+                        <img src="assets/images/services/1.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Plano de Saúde</h5>
+                            <p class="card-text">Já pensou em dar um plano de saúde para o seu pet?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex w-16 ">
+                    <div class="card w-100 py-4 h-100 d-flex align-items-center">
+                        <img src="assets/images/services/2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hospedagem</h5>
+                            <p class="card-text">O hotel que seu cãozinho merece: um lar como o seu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex w-16 ">
+                    <div class="card w-100 py-4 h-100 d-flex align-items-center">
+                        <img src="assets/images/services/3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Prime</h5>
+                            <p class="card-text">Garanta vários benefícios para você e seu pet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex w-16 ">
+                    <div class="card w-100 py-4 h-100 d-flex align-items-center">
+                        <img src="assets/images/services/4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Creche</h5>
+                            <p class="card-text">Não deixe seu cão sozinho em casa enquanto trabalha!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex w-16 ">
+                    <div class="card w-100 py-4 h-100 d-flex align-items-center">
+                        <img src="assets/images/services/5.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pet Sitter</h5>
+                            <p class="card-text">Um herói vai até a sua casa para cuidar do seu pet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex w-16 ">
+                    <div class="card w-100 py-4 h-100 d-flex align-items-center">
+                        <img src="assets/images/services/6.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Passeador</h5>
+                            <p class="card-text">Passeios de 30 ou 60 min para seu pet gastar energia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="container py-5">
+            <h2 class="pb-2 mt-5">Nossos produtos</h2>
+            <div class="row h-100">
+                <div class="col d-flex w-16  ">
+                    <div class="card w-100 py-4 h-100 d-flex align-items-center">
+                        <img src="assets/images/products/1.jpg" class="card-img-top w-50 h-auto">
+                        <div class="card-body my-0 py-0">
+                            <h5 class="card-title">Plano de Saúde</h5>
+                            <p class="card-text">Já pensou em dar um plano de saúde para o seu pet?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex w-16 ">
+                    <div class="card w-100 py-4 h-100 d-flex align-items-center">
+                        <img src="assets/images/products/2.jpg" class="card-img-top w-50 h-auto" alt="...">
+                        <div class="card-body my-0 py-0">
+                            <h5 class="card-title">Hospedagem</h5>
+                            <p class="card-text">O hotel que seu cãozinho merece: um lar como o seu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex w-16 ">
+                    <div class="card w-100 py-4 h-100 d-flex align-items-center">
+                        <img src="assets/images/products/3.jpg" class="card-img-top w-50 h-auto" alt="...">
+                        <div class="card-body my-0 py-0">
+                            <h5 class="card-title">Prime</h5>
+                            <p class="card-text">Garanta vários benefícios para você e seu pet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex w-16 ">
+                    <div class="card w-100 py-4 h-100 d-flex align-items-center">
+                        <img src="assets/images/products/4.jpg" class="card-img-top w-50 h-auto rounded-3" alt="...">
+                        <div class="card-body my-0 py-0">
+                            <h5 class="card-title">Creche</h5>
+                            <p class="card-text">Não deixe seu cão sozinho em casa enquanto trabalha!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--         <section class="container-fluid row p-5 w-100" id="home">
 
             <div class="col-6 pb-5">
                 <h1 class="display-5 text-primary">Sabemos que você ama </h1>
@@ -62,7 +207,7 @@
             <div class="col-12  text-center d-flex justify-content-between">
                 <div class="card">
                     <div class="card-body shadow">
-                        <ion-icon name="trophy-outline"></ion-icon >
+                        <ion-icon name="trophy-outline"></ion-icon>
                         <h2>85+</h2>
                         <p>Prêmio</p>
                     </div>
@@ -70,7 +215,7 @@
 
                 <div class="card">
                     <div class="card-body shadow">
-                        <ion-icon name="people-outline"></ion-icon >
+                        <ion-icon name="people-outline"></ion-icon>
                         <h2>94k</h2>
                         <p>Clientes</p>
                     </div>
@@ -78,7 +223,7 @@
 
                 <div class="card">
                     <div class="card-body shadow">
-                        <ion-icon name="person-add-outline"></ion-icon >
+                        <ion-icon name="person-add-outline"></ion-icon>
                         <h2>90+</h2>
                         <p>Empregados</p>
                     </div>
@@ -86,14 +231,14 @@
 
                 <div class="card">
                     <div class="card-body shadow">
-                        <ion-icon name="bag-check-outline"></ion-icon >
+                        <ion-icon name="bag-check-outline"></ion-icon>
                         <h2>88%</h2>
                         <p>Proteção</p>
                     </div>
                 </div>
 
             </div>
-            <!--                 <form
+                         <form
                     action="https://gmail.us14.list-manage.com/subscribe/post?u=1f95dbe61c14a18db89df628b&amp;id=919fdb98ce"
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
                     target="_blank" novalidate>
@@ -107,30 +252,41 @@
                             name="b_1f95dbe61c14a18db89df628b_919fdb98ce" tabindex="-1" value=""></div>
 
                     <input type="submit" value="Participar" id="submit">
-                </form> -->
+                </form> 
 
         </section>
 
         <section class="container-fluid p-5 d-flex align-items-center w-100 position-relative my-5" id="about">
             <div class="col-6 d-flex justify-content-center">
                 <img src="images/dog2.png" alt="">
-                <div class="card shadow experienceCard border-0 position-absolute top-0 start-0 ms-5 rounded-3" >
+                <div class="card shadow experienceCard border-0 position-absolute top-0 start-0 ms-5 rounded-3">
                     <div class="card-body d-flex row justify-content-center">
-                       <h2 class="mb-0 w-auto">20+</h2>
-                       <h3 class="mb-0">Anos de Experiência</h3>
+                        <h2 class="mb-0 w-auto">20+</h2>
+                        <h3 class="mb-0">Anos de Experiência</h3>
                     </div>
                 </div>
             </div>
-            <div class="col-6 pb-5 gap-5">
-                <h1 class="display-5 text-primary">O melhor para</h1>
-                <h1 class="display-5 text-primary">seu pet</h1>
-                <p class="display-7 text-primary">Conheça alguns dos beneficios dos nossos produtos e serviços para o seu pet.</p>
+            <div class="col-6 pb-5 gap-5 d-flex row ">
+                <div class="title">
+                    <h1 class="display-5 text-primary">O melhor para</h1>
+                    <h1 class="display-5 text-primary">seu pet</h1>
+                </div>
                 <div class="container p-0">
+                    <p class="display-7 text-primary">Conheça alguns dos beneficios dos nossos produtos e serviços para o seu pet.</p>
+
                     <ul class="d-flex flex-wrap p-0">
-                        <li class="w-50 d-flex align-items-center"><ion-icon name="checkmark-circle-outline"></ion-icon>Vacinas</li>
-                        <li class="w-50 d-flex align-items-center"><ion-icon name="checkmark-circle-outline"></ion-icon>Odontologia</li>
-                        <li class="w-50 d-flex align-items-center"><ion-icon name="checkmark-circle-outline"></ion-icon>Internação</li>
-                        <li class="w-50 d-flex align-items-center"><ion-icon name="checkmark-circle-outline"></ion-icon>Farmácia</li>
+                        <li class="w-50 d-flex align-items-center">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>Vacinas
+                        </li>
+                        <li class="w-50 d-flex align-items-center">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>Odontologia
+                        </li>
+                        <li class="w-50 d-flex align-items-center">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>Internação
+                        </li>
+                        <li class="w-50 d-flex align-items-center">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>Farmácia
+                        </li>
                     </ul>
                 </div>
 
@@ -138,28 +294,30 @@
         </section>
 
         <section class="container-fluid row m-0 p-0" id="servicesAndRates">
-            <div class="pet col-3  " >
+            <div class="pet col-3  ">
 
-                    <img src="images/dog1.png" alt="">
+                <img src="images/dog1.png" alt="">
 
             </div>
 
             <div class="col-6">
                 <h1>O melhor pacote de serviços!</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam minus optio eaque sint. Nihil et, laborum sint quaerat accusantium consequatur quia in, consequuntur aperiam, nulla fugit vitae harum nemo dicta.lo. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam minus optio eaque sint. Nihil et,
+                    laborum sint quaerat accusantium consequatur quia in, consequuntur aperiam, nulla fugit vitae harum
+                    nemo dicta.lo. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
 
-            
-            <div class="pet col-3  " >
 
-                    <img src="images/cat1.png" alt="">
+            <div class="pet col-3  ">
+
+                <img src="images/cat1.png" alt="">
 
             </div>
         </section>
-
+ -->
     </main>
 
-<!--     <footer>
+    <!--     <footer>
         <a href="https://github.com/gabrielwaltmann/" target="_blank">Developed by Gabriel Waltmann</a>
     </footer> -->
 </body>
