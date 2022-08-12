@@ -11,10 +11,10 @@
     list-style: none;
 }
 
-body, html{
+body{
     background-color: var(--color1);
     overflow-x: hidden;
-    width: 100vw;
+    width: 97vw;
 }
 
 html{
@@ -22,9 +22,10 @@ html{
 	scroll-padding-top: 90px;
 }
 
+
 .logo a{
     font-family: var(--logoFont), Arial, sans-serif;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .nav-item{
@@ -81,12 +82,13 @@ html{
 }
 
 .card{
-    width: 20%;
+    transition: all .4s ease-in;
 }
 
 .card:hover{
     border: 1px solid var(--primaryColor);
     cursor: pointer;
+    transform: scale(1.06);
 }
 
 .card h5{
@@ -120,10 +122,11 @@ footer h6{
 }
 
 @media (min-width: 768px) {
-    .w-16{
-    width: 16.6% !important;
+    .w-30{
+    width: 30% !important;
+    }
 }
-}
+
 
 
 #contact{
