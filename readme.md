@@ -13,11 +13,7 @@
     <td>CSS</td>
 
   </tr>
-  <tr>
-    <td>38.6%</td>
-    <td>61.4%</td>
 
-  </tr>
 </table>
 
 # Fields <!-- Campos -->
@@ -51,4 +47,4 @@
 
 # Author
 
-<p> Made with by Gabriel Waltmann <a href="https://www.linkedin.com/in/gabriel-waltmann-236114232/">See my Linkedin</a>
+<p> Made by Gabriel Waltmann <a href="https://www.linkedin.com/in/gabriel-waltmann-236114232/">See my Linkedin</a>
