@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 /* Global */
 *{
@@ -10,9 +11,28 @@
     list-style: none;
 }
 
-body{
+body, html{
     background-color: var(--color1);
     overflow-x: hidden;
+    width: 100vw;
+}
+
+html{
+    scroll-behavior: smooth;
+	scroll-padding-top: 90px;
+}
+
+.logo a{
+    font-family: var(--logoFont), Arial, sans-serif;
+    font-size: 60px;
+}
+
+.nav-item{
+    font-weight: bold;
+}
+.nav-item:hover{
+    cursor: pointer;
+    color: var(--darkColor);
 }
 
 :root{
@@ -20,13 +40,11 @@ body{
     --secondaryColor: #371669;
     --normalColor: #F9F9F9;    
     --boldColor: #ff4e1d;
-
-    --font: 'Mochiy Pop One', arial, sans-serif;
+    --darkColor: #121212;
+    --bgWhatsapp: #25D366;
+    --font: 'Fira Sans', sans-serif;
+    --logoFont: 'Fredoka One', cursive;
 }
-
-/* Bootstrap Classes */
-
-
 
 
 .btn-outline-primary {
@@ -40,9 +58,6 @@ body{
     --bs-btn-disabled-border-color: var(--secondaryColor) !important;
 }
 
-
-
-
 .btn-primary {
     --bs-btn-bg: var(--secondaryColor) !important;
     --bs-btn-border-color: var(--secondaryColor) !important;
@@ -55,15 +70,23 @@ body{
     --bs-btn-disabled-border-color: var(--secondaryColor) !important;
 }
 
+#helpCard{
+    background-color: var(--primaryColor) !important;
+    color: var(--normalColor);
+}
 
-.btn-primary:hover{
+.btn-primary:hover{ 
     background-color: var(--primaryColor) !important;
     border: 1px solid var(--secondaryColor) !important;
 }
 
 .card{
     width: 20%;
-    background-color: var(--primaryColor) !important;
+}
+
+.card:hover{
+    border: 1px solid var(--primaryColor);
+    cursor: pointer;
 }
 
 .card h5{
@@ -72,12 +95,18 @@ body{
 }
 
 .card p, .card h6{
+    color: var(--darkColor) !important;
+}
+
+footer .card p, footer .card h6{
     color: var(--normalColor) !important;
 }
 
-#services {
-    height: 30vh !important;
+footer h6{
+    font-weight: bold;
 }
+
+
 
 #services img{
     height: 100px;
@@ -90,22 +119,39 @@ body{
     justify-content: flex-start;
 }
 
-.w-16{
+@media (min-width: 768px) {
+    .w-16{
     width: 16.6% !important;
 }
-/* .experienceCard{
-    width: 150px !important;
-    height: 120px !important;
-    position: absolute;
-    background-color: var(--secondaryColor) !important;
-    text-align: center;
 }
 
-.experienceCard h2, .experienceCard h3{
-    color: var(--bgWhite);
-    font-size: 16px !important;
+
+#contact{
+    height: 130px;
+    background-color: var(--primaryColor);
+    color: var(--normalColor);
 }
- */
+
+form .form-select, .form-floating{
+    width: 350px !important;
+    height: 60px !important;
+}
+
+form p{
+    font-weight: bold;
+}
+.button, .button button{
+    height: 60px !important;
+    width: 100px;
+}
+
+.text-reset{
+    text-decoration: none !important;
+}
+
+.text-reset:hover{
+    text-decoration: underline !important;
+}
 
 #home ion-icon{
     height: 50px;
@@ -133,3 +179,36 @@ body{
     transform: translateY(-10%) !important;
 }
 
+.socialMedia ion-icon{
+    height: 30px;
+    width: 30px;
+}
+
+header ion-icon{
+    height: 30px;
+    width: 30px;
+}
+
+.whatsapp{
+    background-color: var(--bgWhatsapp);
+    color: var(--normalColor);
+    z-index: 3;
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+    height: auto;
+    width: auto;
+    transition: all .3s;
+}
+
+.whatsapp ion-icon{
+    height: 50px;
+    width: 50px;
+    padding: 10px
+}
+
+.whatsapp:hover{
+    cursor: pointer;
+    color: var(--normalColor);
+    transform: scale(1.1);
+}

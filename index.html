@@ -11,49 +11,49 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
 
-<body class="bg-light ">
-    <header class="navbar navbar-expand-md vw-100 px-5">
-        <div class="container-fluid">
+<body class="bg-light position-relative w-100">
+    <header class="navbar navbar-expand-md vw-100 px-5 fixed-top bg-light border-bottom ">
+        <div class="container-fluid justify-content-center gap-2">
+            <div class="logo d-flex align-items-center ">
+                <a class="navbar-brand" href="#">Dogclub</a>
+                <img src="assets/images/logo.png" alt="Logo da empresa Dogclub">
+            </div>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse" id="navbarTogglerDemo01">
-                <div class="logo">
-                    <a class="navbar-brand" href="#">Dogclub</a>
-                    <img src="assets/images/logo.png" alt="">
-                </div>
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Serviços</a>
+                        <a class="nav-link" href="#services">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Produtos</a>
+                        <a class="nav-link" href="#products">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#contact">Contato</a>
                     </li>
+                    <a href="#" class="btn btn-outline-primary rounded-5 text-center d-flex align-items-center gap-1">
+                        <ion-icon name="basket-outline"></ion-icon class="my-0 col">
+                        <span id="text" class="col">Meus Pedidos</span>
+                    </a>
                 </ul>
             </div>
 
-            <a href="#">
-                <button type="button" class="btn btn-outline-primary rounded-5">
-                    <ion-icon name="basket-outline"></ion-icon>
-                    Meus Pedidos
-                </button>
-            </a>
+
         </div>
     </header>
 
 
-    <main class="vw-100  mx-3">
+    <main class="vw-100  mx-md-3 mx-1 pt-5 my-md-0 mt-5 mx-auto">
 
-        <section class="container row m-auto my-5" id="home">
-            <div id="carouselExampleInterval" class="carousel slide col-9 " data-bs-ride="carousel">
+        <section class="container row mx-auto pt-5 pt-md-0 my-5 mt-5 mt-md-0 gap-3 " id="home">
+            <div class="carousel slide col-md-9 col-12 px-md-1 px-0" data-bs-ride="carousel">
                 <div class="carousel-inner rounded-4">
                     <div data-bs-interval="2000" class="carousel-item active">
                         <img src="assets/images/posters/45-off.png" class="d-block w-100" alt="...">
@@ -76,9 +76,9 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <div class="col-3">
-                <div class="card w-100 py-4 h-100">
-                    <div class="card-body d-flex  row align-content-center">
+            <div class="col-md-3 col-12 d-md-block d-none">
+                <div class="card w-100 py-md-4 h-100 rounded-4">
+                    <div class="card-body d-flex ps-5 row align-content-center justify-content-center">
                         <h5 class="card-title">Economize</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Na primeira compra</h6>
                         <p class="card-text">20%OFF + FRETE GRÁTIS</p>
@@ -90,10 +90,10 @@
             </div>
         </section>
 
-        <section id="services" class="container my-5">
+        <section class=" container my-5" id="services" >
             <h2 class="pb-2 ">Conheça nossos serviços</h2>
-            <div class="row h-100">
-                <div class="col d-flex w-16  ">
+            <div class="h-auto">
+                <div class="col-12 d-flex w-16 mb-5 text-center  ">
                     <div class="card w-100 py-4 h-100 d-flex align-items-center">
                         <img src="assets/images/services/1.png" class="card-img-top">
                         <div class="card-body">
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex w-16 ">
+                <div class="col-12 d-flex w-16 mb-5 text-center ">
                     <div class="card w-100 py-4 h-100 d-flex align-items-center">
                         <img src="assets/images/services/2.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -111,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex w-16 ">
+                <div class="col-12 d-flex w-16 mb-5 text-center ">
                     <div class="card w-100 py-4 h-100 d-flex align-items-center">
                         <img src="assets/images/services/3.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex w-16 ">
+                <div class="col-12 d-flex w-16 mb-5 text-center ">
                     <div class="card w-100 py-4 h-100 d-flex align-items-center">
                         <img src="assets/images/services/4.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex w-16 ">
+                <div class="col-12 d-flex w-16 mb-5 text-center ">
                     <div class="card w-100 py-4 h-100 d-flex align-items-center">
                         <img src="assets/images/services/5.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -138,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex w-16 ">
+                <div class="col-12 d-flex w-16 mb-5 text-center ">
                     <div class="card w-100 py-4 h-100 d-flex align-items-center">
                         <img src="assets/images/services/6.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -150,176 +150,170 @@
             </div>
         </section>
 
-        <section id="products" class="container py-5">
-            <h2 class="pb-2 mt-5">Nossos produtos</h2>
-            <div class="row h-100">
-                <div class="col d-flex w-16  ">
+        <section class=" container-fluid" id="products">
+            <h2 class="mb-3">Nossos produtos</h2>
+            <div class="">
+                <div class="mb-5">
                     <div class="card w-100 py-4 h-100 d-flex align-items-center">
                         <img src="assets/images/products/1.jpg" class="card-img-top w-50 h-auto">
                         <div class="card-body my-0 py-0">
-                            <h5 class="card-title">Plano de Saúde</h5>
-                            <p class="card-text">Já pensou em dar um plano de saúde para o seu pet?</p>
+                            <h5 class="card-title">Bolsa de Transporte</h5>
+                            <p class="card-text">Tecido Jeans. <br>Alça reforçada. <br>Rede dos dois lados.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex w-16 ">
+                <div class="mb-5">
                     <div class="card w-100 py-4 h-100 d-flex align-items-center">
                         <img src="assets/images/products/2.jpg" class="card-img-top w-50 h-auto" alt="...">
                         <div class="card-body my-0 py-0">
-                            <h5 class="card-title">Hospedagem</h5>
-                            <p class="card-text">O hotel que seu cãozinho merece: um lar como o seu</p>
+                            <h5 class="card-title">Ração Seca para cachorros</h5>
+                            <p class="card-text">Auxilia no controle de peso ideal, pois conta com níveis reduzido de
+                                gordura e alta concentração de proteínas.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex w-16 ">
+                <div class="mb-5">
                     <div class="card w-100 py-4 h-100 d-flex align-items-center">
                         <img src="assets/images/products/3.jpg" class="card-img-top w-50 h-auto" alt="...">
                         <div class="card-body my-0 py-0">
-                            <h5 class="card-title">Prime</h5>
-                            <p class="card-text">Garanta vários benefícios para você e seu pet.</p>
+                            <h5 class="card-title">Ração seca para gatos</h5>
+                            <p class="card-text">Contém elevado teor de proteínas de alta qualidade que auxiliam na
+                                manutenção da massa muscular do gato.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex w-16 ">
+                <div class="mb-5">
                     <div class="card w-100 py-4 h-100 d-flex align-items-center">
                         <img src="assets/images/products/4.jpg" class="card-img-top w-50 h-auto rounded-3" alt="...">
                         <div class="card-body my-0 py-0">
-                            <h5 class="card-title">Creche</h5>
-                            <p class="card-text">Não deixe seu cão sozinho em casa enquanto trabalha!</p>
+                            <h5 class="card-title">Petisco para Cães</h5>
+                            <p class="card-text">Ingredientes naturais que auxiliam no controle da ansiedade e stress
+                                dos cães</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--         <section class="container-fluid row p-5 w-100" id="home">
 
-            <div class="col-6 pb-5">
-                <h1 class="display-5 text-primary">Sabemos que você ama </h1>
-                <h1 class="display-5 text-primary">muito seu pet</h1>
-                <p class="display-7 text-primary">Inscreva-se na Dog club para sempre receber as novidades de nossos
-                    produtos e serviços para seu cãozinho.</p>
-                <a href="#">
-                    <button type="button" class="btn btn-primary rounded-5">Agendar uma consulta</button>
-                </a>
+        <section id="contact" class="container my-5 rounded-md-4 align-items-center justify-content-center gap-md-5 px-md-5 h-auto">
+            <strong class="col-12 col-md-3 text-wrap text-center font-weight-bold mb-0">Cadastre-se e fique sabendo das ofertas
+                antes de todos!
+            </strong>
 
-            </div>
-
-            <div class="col-12  text-center d-flex justify-content-between">
-                <div class="card">
-                    <div class="card-body shadow">
-                        <ion-icon name="trophy-outline"></ion-icon>
-                        <h2>85+</h2>
-                        <p>Prêmio</p>
-                    </div>
+            <form class="gx-3 gy-2 align-items-center col-md-9 justify-content-between gap-5">
+                <div class="form-floating rounded-3 col-12 mw-100">
+                    <input type="email" class="form-control h-100 " id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" class="text-dark">Email address</label>
                 </div>
 
-                <div class="card">
-                    <div class="card-body shadow">
-                        <ion-icon name="people-outline"></ion-icon>
-                        <h2>94k</h2>
-                        <p>Clientes</p>
-                    </div>
+                <select class="form-select rounded-3 col-12 mw-100">
+                    <option selected disabled>Qual seu pet?</option>
+                    <option value="1">Cachorro</option>
+                    <option value="2">Gato</option>
+                    <option value="3">Passaro</option>
+                    <option value="4">Roedor</option>
+                    <option value="5">Peixe</option>
+                    <option value="6">Reptil</option>
+                </select>
+
+                <div class="col-auto button rounded-4">
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </div>
-
-                <div class="card">
-                    <div class="card-body shadow">
-                        <ion-icon name="person-add-outline"></ion-icon>
-                        <h2>90+</h2>
-                        <p>Empregados</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-body shadow">
-                        <ion-icon name="bag-check-outline"></ion-icon>
-                        <h2>88%</h2>
-                        <p>Proteção</p>
-                    </div>
-                </div>
-
-            </div>
-                         <form
-                    action="https://gmail.us14.list-manage.com/subscribe/post?u=1f95dbe61c14a18db89df628b&amp;id=919fdb98ce"
-                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                    target="_blank" novalidate>
-
-                    Necessary Content for the MAILCHIMP 
-                    <input type="text" name="DOGNAME" id="nome" placeholder="Nome do seu Dog">
-                    <input type="email" name="EMAIL" id="email" placeholder="E-mail">
-
-                     real people should not fill this in and expect good things - do not remove this or risk form bot signups
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                            name="b_1f95dbe61c14a18db89df628b_919fdb98ce" tabindex="-1" value=""></div>
-
-                    <input type="submit" value="Participar" id="submit">
-                </form> 
-
+            </form>
         </section>
-
-        <section class="container-fluid p-5 d-flex align-items-center w-100 position-relative my-5" id="about">
-            <div class="col-6 d-flex justify-content-center">
-                <img src="images/dog2.png" alt="">
-                <div class="card shadow experienceCard border-0 position-absolute top-0 start-0 ms-5 rounded-3">
-                    <div class="card-body d-flex row justify-content-center">
-                        <h2 class="mb-0 w-auto">20+</h2>
-                        <h3 class="mb-0">Anos de Experiência</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 pb-5 gap-5 d-flex row ">
-                <div class="title">
-                    <h1 class="display-5 text-primary">O melhor para</h1>
-                    <h1 class="display-5 text-primary">seu pet</h1>
-                </div>
-                <div class="container p-0">
-                    <p class="display-7 text-primary">Conheça alguns dos beneficios dos nossos produtos e serviços para o seu pet.</p>
-
-                    <ul class="d-flex flex-wrap p-0">
-                        <li class="w-50 d-flex align-items-center">
-                            <ion-icon name="checkmark-circle-outline"></ion-icon>Vacinas
-                        </li>
-                        <li class="w-50 d-flex align-items-center">
-                            <ion-icon name="checkmark-circle-outline"></ion-icon>Odontologia
-                        </li>
-                        <li class="w-50 d-flex align-items-center">
-                            <ion-icon name="checkmark-circle-outline"></ion-icon>Internação
-                        </li>
-                        <li class="w-50 d-flex align-items-center">
-                            <ion-icon name="checkmark-circle-outline"></ion-icon>Farmácia
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="container-fluid row m-0 p-0" id="servicesAndRates">
-            <div class="pet col-3  ">
-
-                <img src="images/dog1.png" alt="">
-
-            </div>
-
-            <div class="col-6">
-                <h1>O melhor pacote de serviços!</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam minus optio eaque sint. Nihil et,
-                    laborum sint quaerat accusantium consequatur quia in, consequuntur aperiam, nulla fugit vitae harum
-                    nemo dicta.lo. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            </div>
-
-
-            <div class="pet col-3  ">
-
-                <img src="images/cat1.png" alt="">
-
-            </div>
-        </section>
- -->
     </main>
 
-    <!--     <footer>
-        <a href="https://github.com/gabrielwaltmann/" target="_blank">Developed by Gabriel Waltmann</a>
-    </footer> -->
+    <footer class="text-center text-lg-start bg-white text-muted w-100 border-top d-none">
+
+
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3 align-items-center">
+                    <div class="col-md-3 col-lg-4 col-xl-3 card py-4 h-100 rounded-4" id="helpCard">
+                        <div class="card-body d-flex  row align-content-center">
+
+                            <h6 class="card-subtitle mb-2 text-muted">Como podemos ajudar você?</h6>
+                            <p class="card-text">Conheça mais sobre nossa empresa, políticas e tenha o melhor
+                                atendimento do mercado pet </p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">Políticas e Ajuda</h6>
+                        <p>
+                            <a href="#!" class="text-reset">Aviso de privacidade</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Política de Cookies</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Fale conosco</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Política de entrega e devolução</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Institucional
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Empresa</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Termos e condições de uso</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Canal de ética e conduta</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Trabalhe conosco</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center mx-5 px-5 d-flex justify-content-around gap-5">
+            <div id="copyrigth">© 2022 Desenvolved by <a class="text-reset fw-bold"
+                    href="https://www.linkedin.com/in/gabrielwaltmann/" target="_blank">Gabriel Waltmann</a></div>
+
+            <ul class="d-flex gap-5 justify-content-between">
+                <li>
+                    <a target="_blank" href="https://www.facebook.com/gabriel.waltmann.507" class="socialMedia">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://twitter.com/GabrielWaltmann" class="socialMedia">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/waltmanngabriel/" class="socialMedia">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://linkedin.com/in/gabrielwaltmann/" class="socialMedia">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/gabrielwaltmann" class="socialMedia">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/+55996153009/" class="whatsapp d-none position-fixed rounded-circle" target="_blank">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+    </a>
 </body>
 <script src="scripts/bootstrap.bundle.min.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
