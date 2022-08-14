@@ -1,0 +1,41 @@
+@import "variables";
+
+#helpCard{
+    background-color: $primaryColor !important;
+    color: $normalColor;
+}
+
+.card{
+    transition: all .4s ease-in;
+    min-width: 180px !important;
+    max-height: 340px;
+
+    &:hover{
+        border: 1px solid $primaryColor;
+        cursor: pointer;
+    }
+
+    h5{
+        font-size: 25px;
+        color: $boldColor;
+    }
+
+    p, h6{
+        color: $darkColor !important;
+    }
+
+    .card-body{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 768px) {
+    .w-30{
+    width: 30% !important;
+    }
+    #helpCard{
+        display: none !important;
+    }
+}

@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dogclub</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/scss/main.css">
+    <link rel="stylesheet" href="styles/css/custom.css">
+    <link rel="stylesheet" href="styles/css/bootstrap.min.css">
 </head>
 
 <body class="bg-light position-relative">
-    <header class="navbar navbar-expand-md px-5 fixed-top bg-light border-bottom pt-0">
+    <header class="navbar navbar-expand-md px-5 fixed-top bg-light border-bottom pt-0 pb-md-0">
         <div class="container-fluid justify-content-center gap-2">
-            <div class="logo d-flex align-items-center ">
+            <div id="logo" class=" d-flex align-items-center ">
                 <a class="navbar-brand" href="#">Dogclub</a>
                 <img src="assets/images/logo.png" alt="Logo da empresa Dogclub">
             </div>
@@ -23,9 +24,9 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse justify-content-end" id="navbarTogglerDemo01">
+            <div class="navbar-collapse collapse justify-content-end " id="navbarTogglerDemo01">
 
-                <ul class="navbar-nav mx-auto mx-md-0 mb-2 mb-lg-0 text-center">
+                <ul class="navbar-nav  m-md-0 mb-md-0 mb-2 text-center">
                     <li class="nav-item fw-bold">
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
@@ -52,7 +53,8 @@
 
     <main class="vw-100  mx-md-0 pt-5 mt-5 mx-auto">
 
-        <section class="container row mx-auto pt-5 pt-md-0 my-5 mt-5 mt-md-5 gap-3 gap-md-0 align-items-center" id="home">
+        <section class="container row mx-auto pt-5 pt-md-0 my-5 mt-5 mt-md-5 gap-3 gap-md-0 align-items-center"
+            id="home">
             <div class="carousel slide col-md col-12 px-md-1 px-0" data-bs-ride="carousel">
                 <div class="carousel-inner rounded-4">
                     <div data-bs-interval="2000" class="carousel-item active">
@@ -69,7 +71,8 @@
             </div>
             <div class="col-md-4 col-12 d-none d-md-flex">
                 <div class="card w-100 py-md-4 h-100 rounded-4 ">
-                    <div class="card-body d-flex ps-5 row align-content-center justify-content-center px-md-0 text-md-center">
+                    <div
+                        class="card-body d-flex ps-5 row align-content-center justify-content-center px-md-0 text-md-center">
                         <h5 class="card-title">Economize</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Na primeira compra</h6>
                         <p class="card-text">20%OFF + FRETE GRÁTIS</p>
@@ -81,7 +84,7 @@
             </div>
         </section>
 
-        <section class="container my-5" id="services" >
+        <section class="container my-5 p-md-0" id="services">
             <h2 class="pb-2 ">Conheça nossos serviços</h2>
             <div class="h-auto d-md-flex justify-content-md-between  flex-md-wrap gap-md-3">
                 <div class="col-12 d-flex w-30 mb-2 text-center  ">
@@ -142,9 +145,10 @@
         </section>
 
         <section class=" container my-5" id="products">
-            <div class="row text-center justify-content-between">
-                <h2 class="mb-3 m-auto text-start">Nossos produtos</h2>
-                <div  class="mb-3 col-md-3 ">
+            <h2 class="mb-3 m-auto text-start">Nossos produtos</h2>
+
+            <div class="row text-center justify-content-between" >
+                <div class="mb-3 col-md-2 p-0" style="margin: 0 10px;">
                     <div class="card w-100 py-4 h-100 d-flex align-items-center">
                         <img src="assets/images/products/1.jpg" class="card-img-top w-50 h-auto">
                         <div class="card-body my-0 py-0">
@@ -153,27 +157,25 @@
                         </div>
                     </div>
                 </div>
-                <div  class="mb-3 col-md-3 ">
+                <div class="mb-3 col-md-2 p-0" style="margin: 0 10px;">
                     <div class="card w-100 py-4 h-100 d-flex align-items-center">
                         <img src="assets/images/products/2.jpg" class="card-img-top w-50 h-auto" alt="...">
                         <div class="card-body my-0 py-0">
                             <h5 class="card-title">Ração Seca para cachorros</h5>
-                            <p class="card-text">Auxilia no controle de peso ideal, pois conta com níveis reduzido de
-                                gordura e alta concentração de proteínas.</p>
+                            <p class="card-text">Auxilia no controle de peso ideal.</p>
                         </div>
                     </div>
                 </div>
-                <div  class="mb-3 col-md-3 ">
+                <div class="mb-3 col-md-2 p-0" style="margin: 0 10px;">
                     <div class="card w-100 py-4 h-100 d-flex align-items-center">
                         <img src="assets/images/products/3.jpg" class="card-img-top w-50 h-auto" alt="...">
                         <div class="card-body my-0 py-0">
                             <h5 class="card-title">Ração seca para gatos</h5>
-                            <p class="card-text">Contém elevado teor de proteínas de alta qualidade que auxiliam na
-                                manutenção da massa muscular do gato.</p>
+                            <p class="card-text">Contém elevado teor de proteínas de alta qualidade.</p>
                         </div>
                     </div>
                 </div>
-                <div  class="mb-3 col-md-3 ">
+                <div class="mb-3 col-md-2 p-0" style="margin: 0 10px;">
                     <div class="card w-100 py-4 h-100 d-flex align-items-center">
                         <img src="assets/images/products/4.jpg" class="card-img-top w-50 h-auto rounded-3" alt="...">
                         <div class="card-body my-0 py-0">
@@ -186,14 +188,16 @@
             </div>
         </section>
 
-        <section id="contact" class="container rounded-md-4 align-items-center justify-content-center gap-md-5 h-auto text-center rounded-4 py-5 px-md-5">
-            <strong class="col-12 col-md-3 text-wrap text-center font-weight-bold mb-0">Cadastre-se e fique sabendo das ofertas
-                antes de todos!
-            </strong>
+        <section id="contact"
+            class="container rounded-md-4 align-items-center justify-content-center gap-md-5 h-auto text-center rounded-4 py-5 px-md-5">
+            <strong class="col-12 col-md-3 text-wrap text-center font-weight-bold mb-0 ">Cadastre-se e fique sabendo das
+                ofertas antes de todos! </strong>
 
-            <form class="gx-3 gy-2 align-items-center col-md-9 justify-content-md-between gap-2 row justify-content-center mx-md-auto mt-md-3">
+            <form
+                class="gx-3 gy-2 align-items-center col-md-9 justify-content-md-between gap-2 row justify-content-center mx-md-auto mt-md-3">
                 <div class="form-floating col-md col-12 mw-100 p-0">
-                    <input type="email" class="form-control h-100 ps-5 " id="floatingInput" placeholder="name@example.com">
+                    <input type="email" class="form-control h-100 ps-5 " id="floatingInput"
+                        placeholder="name@example.com">
                     <label for="floatingInput" class="text-dark">Email address</label>
                 </div>
 
@@ -207,8 +211,8 @@
                     <option value="6">Reptil</option>
                 </select>
 
-                <div class="col-md button rounded-4">
-                    <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+                <div class="col-md  rounded-4 h-100">
+                    <button type="submit" class="btn h-100 btn-primary w-100 btn ">Cadastrar</button>
                 </div>
             </form>
         </section>
@@ -224,7 +228,8 @@
                         <div class="card-body d-flex row align-content-center">
 
                             <h6 class="card-subtitle mb-2 text-muted">Como podemos ajudar você?</h6>
-                            <p class="card-text">Conheça mais sobre nossa empresa, políticas e tenha o melhor atendimento do mercado pet </p>
+                            <p class="card-text">Conheça mais sobre nossa empresa, políticas e tenha o melhor
+                                atendimento do mercado pet </p>
 
                         </div>
                     </div>
@@ -267,36 +272,36 @@
             </div>
         </section>
 
-        <div class="text-center mx-md-5 px-md-5 d-flex justify-content-around gap-5">
-            <div id="copyrigth" class="col d-flex align-items-center">
-                © 2022 Desenvolved by 
-                <a class="text-reset fw-bold "
-                    href="https://www.linkedin.com/in/gabrielwaltmann/" target="_blank">Gabriel Waltmann
+        <div class="text-center mx-md-5 px-md-5 d-md-flex justify-content-md-around gap-md-5">
+            <div id="copyrigth" class="col-md col-12 d-flex align-items-center pb-5 pb-md-0 justify-content-between">
+                <span>© 2022 Desenvolved by </span>
+                <a class="text-reset fw-bold " href="https://www.linkedin.com/in/gabrielwaltmann/"
+                    target="_blank">Gabriel Waltmann
                 </a>
             </div>
 
-            <ul class="d-flex gap-md-1 gap-5 justify-content-center flex-wrap p-0 col ">
-                <li class="col-5 ">
+            <ul class="d-flex gap-md-1 gap-md-0 justify-content-between flex-wrap p-0 col-md-6 col-md mb-md-3">
+                <li>
                     <a target="_blank" href="https://www.facebook.com/gabriel.waltmann.507" class="socialMedia ">
                         <ion-icon name="logo-facebook"></ion-icon>
                     </a>
                 </li>
-                <li class="col-5">
+                <li>
                     <a target="_blank" href="https://twitter.com/GabrielWaltmann" class="socialMedia">
                         <ion-icon name="logo-twitter"></ion-icon>
                     </a>
                 </li>
-                <li class="col-5">
+                <li>
                     <a target="_blank" href="https://www.instagram.com/waltmanngabriel/" class="socialMedia">
                         <ion-icon name="logo-instagram"></ion-icon>
                     </a>
                 </li>
-                <li class="col-5">
+                <li>
                     <a target="_blank" href="https://linkedin.com/in/gabrielwaltmann/" class="socialMedia">
                         <ion-icon name="logo-linkedin"></ion-icon>
                     </a>
                 </li>
-                <li class="col-5">
+                <li>
                     <a target="_blank" href="https://github.com/gabrielwaltmann" class="socialMedia">
                         <ion-icon name="logo-github"></ion-icon>
                     </a>

@@ -1,0 +1,25 @@
+@import "variables";
+
+.btn-outline-primary {
+    color: $primaryColor !important;
+    border: 1px solid $primaryColor !important;
+    transition: all .4s ease-in;
+
+    &:hover{
+        background-color: $primaryColor !important;
+        color: $normalColor !important;
+    }
+}
+
+.btn-primary {
+    background-color: $secondaryColor !important;
+    border: 1px solid $primaryColor !important;
+    
+    &:hover{
+        background-color: $primaryColor !important;
+        border: 1px solid $secondaryColor !important;
+    }
+}
+
+
+

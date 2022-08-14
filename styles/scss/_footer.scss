@@ -1,0 +1,25 @@
+@import "variables";
+
+footer{
+    .card {
+        p, h6{
+            color: var(--normalColor) !important;
+        }
+    }
+    h6{
+        font-weight: bold;
+    }
+
+    .text-reset{
+        text-decoration: none !important;
+        &:hover{
+            text-decoration: underline !important;
+        }
+    }
+
+} 
+
+.socialMedia ion-icon{
+    height: 30px;
+    width: 30px;
+}

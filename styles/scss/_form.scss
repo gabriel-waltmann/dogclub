@@ -1,0 +1,19 @@
+@import "variables";
+
+#contact{
+    height: 130px;
+    background-color: $primaryColor;
+    color: $normalColor;
+}
+
+form {
+    .form-select, .form-floating{
+        width: 350px !important;
+        height: 60px !important;
+    }
+    p{
+    font-weight: bold;
+    }
+}
+
+
