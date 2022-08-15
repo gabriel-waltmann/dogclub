@@ -1,50 +1,41 @@
 
-<h1 align="center" >Dogclub Page</h1>
+<h1 align="center" >Dogclub</h1>
 
-<p align="center">This is a Loading Page to a pet shop. Desenvolved by me for practice position in CSS.</p>
-
-<br>
-
-# Technologies
-
-<table align="center">
-  <tr>
-    <td>HTML</td>
-    <td>CSS</td>
-
-  </tr>
-
-</table>
-
-# Fields <!-- Campos -->
-+ Dog Name
-+ Email
-+ Participar
-+ Slide show
+<h2 >💻 Sobre o projeto</h2>
+<p >Dog club é uma loading Page de um petshop para apresentação de seus produtos e serviços. O objetivo da criação desse projeto é a pratica da responsividade com bootstrap 5 e substituição do CSS(Puro) pelo Sass.</p>
 
 <br>
 
-# Features
-- [X] Email fild
-- [ ] Backend
-- [X] Loyalty
+<h2 >📸 Demostração</h2>
+<img src="./assets/readme/demo.gif" alt="Demostração do projeto" height="400">
+<img src="./assets/readme/demoMobile.gif" alt="Demostração do projeto" height="400">
+<hr>
 
-<figure>
-  <img align="center" src="readme/1.png"></img>
-</figure>
+### 🚀 Tecnologias
+<p>As seguintes ferramentas foram usadas na construção do projeto:</p>
+✔️ Bootstrap 5<br>
+✔️ HTML<br>
+✔️ Sass(CSS)<br>
+<hr>
 
-<figure>
-  <img align="center" src="readme/2.png"></img>
-</figure>
+### Recursos
+- [X] Cabeçalho
+- [X] Rodapé
+- [X] Botão flutuante do Whatsapp
+- [ ] Integração com API de recebimento de e-mails
+- [X] Design
+- [X] Responsividade Mobile com bootstrap
+- [X] Converção do CSS para Sass
 
-<figure>
-  <img align="center" src="readme/readme.gif"></img>
-</figure>
+<hr>
 
-<a align="center" href="https://gabrielwaltmann.github.io/dogclub/" target="_blank">
-  <h3 align="center">Test website
+Para ver o App hospedado, clique aqui: <a href="https://gabrielwaltmann.github.io/dogclub/">Dogclub</a>
+
+<h2>Autor</h2>
+<a href="https://www.linkedin.com/in/gabrielwaltmann/">
+  <img src="./assets/readme/linkedin.png" alt="linkedin" height="50">
 </a>
-
-# Author
-
-<p> Made by Gabriel Waltmann <a href="https://www.linkedin.com/in/gabriel-waltmann-236114232/">See my Linkedin</a>
+<a href="https://github.com/gabrielwaltmann">
+  <img src="./assets/readme/github.png" alt="github" height="50">
+</a>
+<hr><br>
